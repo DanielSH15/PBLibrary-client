@@ -19,7 +19,7 @@ const Admin = () => {
     const handleShow = () => setShow(true)
     const navigate = useNavigate()
     const getUsers = async () =>{
-    await Axios.get('http://localhost:8000/readall').then((response) =>{
+    await Axios.get('https://pblibraryprot4.herokuapp.com/readall').then((response) =>{
         setData(response.data)
     })
   }
@@ -46,7 +46,7 @@ const Admin = () => {
  }, [""])
 
  const deleteUser = (id) => {
-     Axios.delete(`http://localhost:8000/delete/${id}`).then((response) => {
+     Axios.delete(`https://pblibraryprot4.herokuapp.com/delete/${id}`).then((response) => {
         window.location.reload(true)
     })
  }
@@ -67,7 +67,7 @@ const Admin = () => {
  }
 
  const saveUpdatedUser = () => {
-  axios.put(`http://localhost:8000/update/${updatedUser._id}`, updatedUser).then(response => console.log(response.data)).catch((err) => console.log(err))
+  axios.put(`https://pblibraryprot4.herokuapp.com/update/${updatedUser._id}`, updatedUser).then(response => console.log(response.data)).catch((err) => console.log(err))
   alert('Updated')
   handleClose()
   window.location.reload()
