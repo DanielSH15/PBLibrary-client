@@ -33,7 +33,7 @@ const Navbar = () => {
   
   const get = async() =>{
     if(user){
-      await Axios.get('http://localhost:8000/read', config).then((response)=>{
+      await Axios.get('https://pblibraryprot4.herokuapp.com/read', config).then((response)=>{
       setUsername(response.data.username)
       setId(response.data.id)
       setRole(response.data.accessKey)
