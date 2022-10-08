@@ -1,0 +1,53 @@
+.windowH {
+    position: absolute;
+    top: 9.5%;
+    width: 100%;
+    height: 700px;
+    border: none;
+    background-image: url('../../../images/libraryImg.JPG');
+    background-size:cover;
+}
+
+.insideH {
+    background-color: darkred;
+    position: absolute;
+    bottom: -5%;
+    width: 50%;
+    height: 70%;
+    left: 25%;
+    font-family: 'Poppins', sans-serif;
+}
+.imgContainerH{
+    position:absolute;
+    top:15%;
+    left:40%;
+    height:70%;
+    width:50%;
+    background-color:#0d47a1;
+}
+.imgH {
+    position:absolute;
+    top:15%;
+    left:15%;
+    height:70%;
+    width:70%;
+    background-image: url('../../../images/books.jpeg');
+    background-size:cover;
+}
+.titleH{
+    position:absolute;
+    top:25%;
+    left:10%;
+}
+.btnH {
+    position: absolute;
+    top: 53%;
+    left: 9%;
+    border-radius: 10px;
+    background-color: orange;
+    height: 10%;
+    width: 20%;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor:pointer;
+}

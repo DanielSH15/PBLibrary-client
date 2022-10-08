@@ -1,0 +1,200 @@
+:root{
+    --dark: #2b2d42;
+    --light: #adb5bd;
+    --border: #dee2e6;
+    --border-btn: #edf2f4;
+}
+
+.containerA{
+    max-width: 1024px;
+    margin: auto;
+    position: absolute;
+    top:15%;
+    left:20%;
+}
+
+.font{
+    font-size: 13px;
+}
+.fix{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+.fields{
+    background-color: gray;
+    color: black;
+}
+
+.btnAdd{
+    background-color: aqua;
+    border-radius:10px;
+}
+
+.btnA{
+    background-color: #256ce1;
+}
+.btnSave{
+    position: absolute;
+    right:36%;
+    border: none;
+    background-color: #256ce1;
+    padding: 7px;
+    border-radius: 5px;
+    color: #fff;
+}
+.btnSave:hover{
+    transition: all 0.2s ease-in-out;
+    opacity: 0.9;
+    color: #010606;
+}
+
+.firstNameA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 30%;
+    height: 7.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+
+.lastNameA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 60%;
+    top: 10%;;
+    width: 30%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.usernameA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 5.5%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #d1d1d1;
+}
+.emailA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.passwordA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.numberA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.ageA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.selectA {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+
+.selectAGenre {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 80%;
+    height: 8.5%;
+    border: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+    padding-left:5px;
+    margin-bottom: 2px;
+}
+
+
+
+.selectAG {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 80%;
+    width: 80%;
+    height: 8.5%;
+    border: solid;
+    border-width: 2px;
+    padding-left:5px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.accessKeyA{
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 90%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+

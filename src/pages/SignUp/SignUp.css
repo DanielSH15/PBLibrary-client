@@ -1,0 +1,214 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+
+.containerS {
+    background-color: gray;
+    width: 50%;
+    height: 95%;
+    position: absolute;
+    left: 25%;
+    top: 12%;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+.firstName {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    width: 30%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+
+.lastName {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 60%;
+    top: 10%;;
+    width: 30%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.username {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    width: 80%;
+    height: 5.5%;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid;
+    border-width: 2px;
+    border-color: #d1d1d1;
+}
+.email {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.password {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.number {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.age {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.selectGenre {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 80%;
+    height: 5.5%;
+    border: solid;
+    border-width: 2px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #d1d1d1;
+}
+.genContainer{
+    position:absolute;
+    left:10%;
+    top:80%;
+}
+.gender{
+    font-size:25px;
+    font-weight:600;
+    padding:10px;
+}
+.btn {
+    border-radius: 20px;
+    background-color: #256ce1;
+    height: 5%;
+    width: 20%;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    position: absolute;
+    left: 40%;
+    top: 90%;
+    font-size: 20px;
+    color: #fff;
+}
+.btn:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
+.username_error {
+    position: absolute;
+    left: 10%;
+    top: 25%;
+    color: red;
+    font-size:18px;
+}
+.Fname_error {
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    color: red;
+    font-size: 18px;
+}
+.Lname_error {
+    position: absolute;
+    left: 60%;
+    top: 10%;
+    color: red;
+    font-size: 18px;
+}
+.email_error {
+    position: absolute;
+    left: 10%;
+    top: 35%;
+    color: red;
+    font-size: 18px;
+}
+.password_error {
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    color: red;
+    font-size: 18px;
+}
+.phone_error {
+    position: absolute;
+    left: 10%;
+    top: 55%;
+    color: red;
+    font-size: 18px;
+}
+.age_error {
+    position: absolute;
+    left: 10%;
+    top: 65%;
+    color: red;
+    font-size: 18px;
+}
+.genre_error {
+    position: absolute;
+    left: 10%;
+    top: 75%;
+    color: red;
+    font-size: 18px;
+}
+.gender_error{
+    color:red;
+    font-size:18px;
+}
+
+.error{
+    position: absolute;
+    top: 2%;
+    font-size: 18px;
+    color: red;
+    left: 35%;
+}

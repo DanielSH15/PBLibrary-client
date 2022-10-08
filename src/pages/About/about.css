@@ -1,0 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+.container{
+    width:70%;
+    height:70%;
+    position:absolute;
+    left:15%;
+    top:25%;
+    background-color:gray;
+    border: solid;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+    position:absolute;
+    left:11%;
+    top:20%;
+    font-size: 40px;
+}

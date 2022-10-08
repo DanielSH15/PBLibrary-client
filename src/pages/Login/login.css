@@ -1,0 +1,92 @@
+.containerL{
+    width:70%;
+    height:60%;
+    position:absolute;
+    left:15%;
+    top:25%;
+    border:solid;
+}
+.signUpL {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.btnL {
+    border-radius: 20px;
+    background-color: orange;
+    height: 10%;
+    width: 20%;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    position:absolute;
+    top:60%;
+    left:40%;
+}
+.signInL {
+    width: 50%;
+    height: 100%;
+    background-color: darkred;
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+}
+.usernameL {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 18%;
+    top: 30%;
+    width: 60%;
+    height: 10%;
+    border: none;
+    padding:10px;
+}
+.passwordL {
+    background-color: #d1d1d1;
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    width: 60%;
+    height: 10%;
+    border: none;
+    padding:10px;
+}
+
+.btnLogL {
+@import url(https://fonts.googleapis.com/css?family=Poppins);
+border-radius: 20px;
+background-color: #256ce1;
+height: 12%;
+width: 25%;
+border: none;
+font-family: 'Poppins', sans-serif;
+cursor: pointer;
+position: absolute;
+left: 35%;
+top: 80%;
+font-size: 26px;
+text-decoration: none;
+color: #fff;
+text-align: center;
+display: block;
+}
+.btnLogL:hover{
+    transition: all 0.2s ease-in-out;
+    background: #fff;
+    color: #010606;
+}
+.msgL{
+    position:absolute;
+    left:15%;
+    top:85%;
+}
+
+.errorL{
+    position:absolute;
+    top:70%;
+    color:black;
+    font-size:18px;
+    left:25%;
+}
