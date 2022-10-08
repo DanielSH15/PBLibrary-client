@@ -135,7 +135,7 @@ const Update = () => {
     }
 
     const get = async() =>{
-      await Axios.get('https://pblibraryprot4.herokuapp.com/read', config).then((response)=>{
+      await Axios.get('https://pbserver.adaptable.app/read', config).then((response)=>{
         setFirstName(response.data.firstName)
         setLastName(response.data.lastName)
         setUsername(response.data.username)
@@ -163,7 +163,7 @@ const Update = () => {
     const handleClick = async (e) =>{
       e.preventDefault()
       try{
-        await Axios.put(`https://pblibraryprot4.herokuapp.com/update/${config.params._id}`, updates).then((response) => {
+        await Axios.put(`https://pbserver.adaptable.app/update/${config.params._id}`, updates).then((response) => {
           sessionStorage.setItem("token", JSON.stringify(response.data.token))
           console.log(response.data.message)
         })
@@ -178,7 +178,7 @@ const Update = () => {
     }
 
     const deleteUser = () => {
-      Axios.delete(`https://pblibraryprot4.herokuapp.com/delete/${id}`).then((response) => {
+      Axios.delete(`https://pbserver.adaptable.app/delete/${id}`).then((response) => {
         sessionStorage.removeItem("token")
         navigate('/')
      })

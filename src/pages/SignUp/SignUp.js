@@ -64,7 +64,7 @@ import './SignUp.css'
       const handleSubmit = async (e) =>{
         e.preventDefault()
         try{
-          await Axios.post('https://pblibraryprot4.herokuapp.com/registration', {
+          await Axios.post('https://pbserver.adaptable.app/registration', {
             username: username,
             firstName: firstName,
             lastName: lastName,
