@@ -14,7 +14,7 @@ const Login = () => {
     const login = async (e) =>{
       e.preventDefault()
       try{
-       await Axios.post('https://pbserver.adaptable.app/login', {
+       await Axios.post(process.env.REACT_APP_PUBLIC_URI + '/login', {
         username: username,
         password: password
        }).then((response) => {

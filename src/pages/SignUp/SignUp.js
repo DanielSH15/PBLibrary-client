@@ -64,7 +64,7 @@ import './SignUp.css'
       const handleSubmit = async (e) =>{
         e.preventDefault()
         try{
-          await Axios.post('https://pbserver.adaptable.app/registration', {
+          await Axios.post(process.env.REACT_APP_PUBLIC_URI + '/registration', {
             username: username,
             firstName: firstName,
             lastName: lastName,

@@ -135,7 +135,7 @@ const Update = () => {
     }
 
     const get = async() =>{
-      await Axios.get('https://pbserver.adaptable.app/read', config).then((response)=>{
+      await Axios.get(process.env.REACT_APP_PUBLIC_URI + '/read', config).then((response)=>{
         setFirstName(response.data.firstName)
         setLastName(response.data.lastName)
         setUsername(response.data.username)
