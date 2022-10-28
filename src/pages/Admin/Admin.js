@@ -18,6 +18,7 @@ const Admin = () => {
     const handleClose = () => setShow(false)
     const handleShow = () => setShow(true)
     const navigate = useNavigate()
+
     const getUsers = async () =>{
     await Axios.get(process.env.REACT_APP_PUBLIC_URI + '/readall').then((response) =>{
         setData(response.data)
@@ -66,17 +67,29 @@ const Admin = () => {
   })
  }
 
- const saveUpdatedUser = () => {
-  axios.put(process.env.REACT_APP_PUBLIC_URI + `/update/${updatedUser._id}`, updatedUser).then(response => console.log(response.data)).catch((err) => console.log(err))
-  alert('Updated')
-  handleClose()
-  window.location.reload()
+ const saveUpdatedUser = async(e) => {
+  try{
+    await axios.put(process.env.REACT_APP_PUBLIC_URI + `/update/${updatedUser._id}`, updatedUser).then((response) => {
+      console.log(response.data)
+      alert('Updated')
+      handleClose()
+      window.location.reload()
+    })
+  } catch(e){
+    if(e.response && e.response.status >= 400 && e.response.status <= 500){
+      setError(e.response.data.message)
+      console.log(error)
+  }
+  }
+  
  }
 
  const DropDown = () =>{
   var value = document.getElementById('genre').value;
   updatedUser.genre = value
 }
+
+
 
  
   return (
@@ -89,7 +102,7 @@ const Admin = () => {
         </Modal.Header>
         <Modal.Body>
           <form>
-          <div className='errorU'></div>
+          <div className='errorA'>{error}</div>
           <input type="text" className="firstNameA" placeholder="First Name" name="firstName"  defaultValue={updatedUser.firstName} onChange = {handleChange}/>
                 <input type="text" className="lastNameA" placeholder="Last Name" name="lastName"  defaultValue={updatedUser.lastName} onChange = {handleChange}/>
                 <br /><br />

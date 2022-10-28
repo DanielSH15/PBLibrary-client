@@ -198,3 +198,10 @@
     border-color: #d1d1d1;
 }
 
+.errorA{
+    position: absolute;
+    top: 0%;
+    font-size: 18px;
+    color: red;
+    left: 30%;
+}

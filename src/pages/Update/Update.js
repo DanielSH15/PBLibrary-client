@@ -163,7 +163,7 @@ const Update = () => {
     const handleClick = async (e) =>{
       e.preventDefault()
       try{
-        await Axios.put(`https://pbserver.adaptable.app/update/${config.params._id}`, updates).then((response) => {
+        await Axios.put(process.env.REACT_APP_PUBLIC_URI + `/update/${config.params._id}`, updates).then((response) => {
           sessionStorage.setItem("token", JSON.stringify(response.data.token))
           console.log(response.data.message)
         })
@@ -172,13 +172,13 @@ const Update = () => {
       } catch (e){
         if(e.response && e.response.status >= 400 && e.response.status <= 500){
             setError(e.response.data.message)
-            console.log(config.params['_id'])
+            console.log(error)
         }
       }
     }
 
     const deleteUser = () => {
-      Axios.delete(`https://pbserver.adaptable.app/delete/${id}`).then((response) => {
+      Axios.delete(process.env.REACT_APP_PUBLIC_URI +`/delete/${id}`).then((response) => {
         sessionStorage.removeItem("token")
         navigate('/')
      })
@@ -189,7 +189,7 @@ const Update = () => {
     return (
     <div className='containerU'>
           <form>
-          <div className='errorU'></div>
+          <div className='errorU'>{error}</div>
           <input type="text" className="firstNameU" placeholder="First Name" name="firstname" id="firstname" defaultValue={firstName} onChange = {e => setFirstName(e.target.value)}/>
                 <div id="Fname_error" className="Fname_errorU"></div>
                 <input type="text" className="lastNameU" placeholder="Last Name" name="lastname" id="lastname" defaultValue={lastName} onChange = {e => setLastName(e.target.value)}/>
