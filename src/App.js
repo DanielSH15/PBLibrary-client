@@ -8,6 +8,7 @@ import './App.css';
 import { useState } from "react";
 import Update from "./pages/Update/Update";
 import Admin from "./pages/Admin/Admin";
+import Library from "./pages/Library/Library";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -23,6 +24,7 @@ function App() {
         <Route path = "/login" exact element = {<Login />} />
         <Route path = "/update" exact element = {<Update />} />
         <Route path="/admin" exact element = {<Admin />} />
+        <Route path="/library" exact element = {<Library />} />
       </Routes>
     </Router>
     </div>

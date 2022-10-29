@@ -45,7 +45,7 @@ useEffect(() =>{
   get()
 })
   
-if(role == 5){
+if(role === 10){
   return(
     <Nav>
         <NavLink to = "/">
@@ -76,7 +76,35 @@ if(role == 5){
         </NavBtn>
       </Nav>
   )
-} 
+} else if(role === 5){
+  return(
+    <Nav>
+        <NavLink to = "/">
+            <h1 style={{position: "absolute", left: "10%"}}>PBLibrary</h1>
+        </NavLink>
+        <Bars />
+        <NavMenu>
+            <NavLink>
+                Hello, {username}
+            </NavLink>
+            <NavLink to="/about">
+                About
+            </NavLink>
+            <NavLink to="/library">
+                Library
+            </NavLink>
+            <NavLink to="/update">
+              Update
+          </NavLink>
+        </NavMenu>
+        <NavBtn>
+            <NavBtnLink onClick={logout}>
+              Logout
+            </NavBtnLink>
+        </NavBtn>
+      </Nav>
+  )
+}
   if (user){
     return(
       <Nav>
